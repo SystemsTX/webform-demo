@@ -9,6 +9,8 @@
 	<meta name="author" content="">
 
 	<title>Creative Treatment</title>
+	<script type="module"
+		src="https://unpkg.com/verifytx-webform@latest/dist/verifytx-webform/verifytx-webform.esm.js"></script>
 
 	<!-- Bootstrap core CSS -->
 	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -82,12 +84,14 @@
 	<section class="bg-primary" id="about">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6 mx-auto text-center">
-					<h2 class="section-heading text-white">Verify Your Benefits</h2>
+				<div class="col-lg-6 mx-auto ">
+					<h2 class="section-heading text-center text-white">Verify Your Benefits</h2>
 					<hr class="light my-4">
 					<div class="iframe-container">
-						<iframe src="https://api.verifytx.com/webforms/load/8V42VDLIV1SDFbFY8J2iB0NpS34z7rHrK8lh0906"
-							frameborder="0" scrolling="no" height="1200" width="100%"></iframe>
+						<verifytx-webform instance="https://api.verifytx.com"
+							webform-key="1PhH0DcP7uQ6lL94Eo5hkqZe4aZhS88iGWBK4MFg">
+						</verifytx-webform>
+
 					</div>
 				</div>
 
